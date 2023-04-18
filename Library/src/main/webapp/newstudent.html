@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/f90b4ddd1d.js" crossorigin="anonymous"></script>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Students</title>
+    <link rel="stylesheet" href="CSS/newstudent.css">
+
+    <style>
+      body{
+          font-family: "Helvetica Neue",Helvetica,Arial,sans-serif ;
+        }
+    </style>
+</head>
+
+
+<body>
+        <!-- Studentform -->
+       <div class="forbackground">   </div>  
+       <nav class="navbar">
+        <div class="container-fluid">
+          <ul class="nav nav-pills">
+            <li role="presentation" ><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="newstudent.html" class="active2">Students</a></li>
+            <li role="presentation"><a href="Books.html" >Books</a></li>
+            <li role="presentation"><a href="Dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
+       
+      </nav>
+        <!-- <button class="btn btn-primary back" onclick="gotohome()">Back</button> -->
+        <div>
+        <div id="controladdstudent" class="modal">
+          <div class="newstudent" id="popup">
+           
+            <form id="addstudent" >   
+                 
+                  <!-- <h3 style="text-align: center;">Enter Student Details</h3> -->
+                  
+                    <a class="foricon" onclick="closestudent()"><i class="fa-solid fa-xmark"></i></a>
+                    
+                   
+                      <div class="inputbutton">
+                        <label for="studentname">Name*</label><br>
+                         <input type="text" id="studentname" name="studentName" required> </input>
+                    </div>     
+                        <div class="inputbutton">
+                            <label for="rollno">Roll no*</label><br>
+                             <input  id="rollno" type="text" name="rollNo" required></input>
+                           </div>   
+                   <div class="inputbutton">
+                    <label for="emailid">E-mail id*</label><br>
+                    <input  id="emailid" type="email" name="mailId"required ></input>
+                   </div>
+                 
+                <div class="row">
+                  <div class="col-sm-5">
+                    <div class="inputbutton">
+                      <label for="gender">Gender*</label>
+                      <select id="gender" class="inputbutton" name="genderId">
+                          <option value="31">Female</option>
+                          <option value="32">Male</option>
+                          <option value="33">Other</option> 
+                        </select>
+                  </div>
+                  </div>
+                 
+             
+                  <div class="col-sm-5">
+                    <div class="inputbutton">
+                      <label for="branch">Branch*</label>
+                    <select id="branch" name="branchId" class="inputbutton" required>
+                          <option value="1">CS</option>
+                          <option value="2">IT</option>
+                          <option value="3">EE</option>
+                          <option value="4">ENTC</option>
+                          <option value="5">ME</option>  
+                        </select>
+                  </div>
+                  </div>
+                
+                </div>
+                   
+                 
+                 <div >
+                    <button class="btn btn-primary add" type="submit">Add</button>    
+                 </div> 
+                 
+                </form>
+             </div>       
+              
+            
+          
+        </div>
+        </div>
+                          <!-- table for showing  Students data -->
+                          <div class="container-fluid">
+                            <div class="forbg" id="students">
+                              <div class="firsthead">
+                                 <div><h2>Students</h2></div> 
+                              </div>
+                              <div class="search-add">
+                                <div><input type="text" id="search" class="searchstudent"onkeyup="myFunction()" placeholder="Search for Roll no" title="Type in a name"></div>
+                                <div><button class="forstudent btn btn-primary" onclick="Addstudent()">Add Student</button></div> 
+                              </div>
+                              
+                                  <div class="leftvector"><img src="./icons/studentandbook.png"></div>
+                                  <div class="rightvector"><img src="./icons/booksvector.png"></div>
+                              <div class="fortable">
+                            <table id="Students" class="booktable" ></table>
+                          </div>
+                         
+                          </div>
+                          </div>
+      
+                          
+                            <div id="myModal" class="modal2">
+
+                              <!-- Modal content -->
+                                <div class="covertable">
+                               <span class="close">x</span>
+                                  <table  id="duestable" class="duetable"></table>
+                                </div>
+                                
+                              
+                            
+                            </div>
+                          
+                          
+          
+       
+        
+
+
+
+    <script src="JS/newstudent.js"> </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+</body>
+</html>

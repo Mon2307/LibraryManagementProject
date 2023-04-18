@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+
+<style>
+   
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<body>
+    
+    <div class="forbackground"></div>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <ul class="nav nav-pills">
+          <li role="presentation" ><a href="index.html">Home</a></li>
+          <li role="presentation"><a href="newstudent.html">Students</a></li>
+          <li role="presentation"><a href="Books.html">Books</a></li>
+          <li role="presentation"><a href="Dashboard.html"  class="active2">Dashboard</a></li>
+        </ul>
+      </div>
+     
+    </nav>
+    <div>
+        <!-- <button class="btn btn-primary back" onclick="gotohome()">Back</button> -->
+        <div class="container-fluid">
+         
+            <div class="cardcontainer forbg">
+              
+                <div class="row">
+                  
+                    <div class="card col-sm-4">
+                      <div><h4>Total Books</h4></div>
+                      <div class="carditems">
+                        <div><img src="icons/totalbooks.png"></div>
+                         <div> <p id="fortotalbooks" >1</p></div>  
+                      </div> 
+                    </div>
+                    <div class="card col-sm-4">
+                      <h4>Total Users</h4>
+                      <div class="carditems">
+                        <div><img src="icons/totalusers.png"></div>
+                         <div> <p id="fortotalusers">8</p></div>  
+                      </div> 
+                    </div>
+                    <div class="card col-sm-4">
+                      <h4>Total Dues</h4>
+                      <div class="carditems">
+                        <div> <img src="icons/totaldues.png"></div>
+                         <div> <p id="totaldues">8</p></div>  
+                      </div>
+                    </div>
+                  </div>
+                    
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="forchartdiv">
+                        <h4 style="color:#189AB4; margin-left: 26%;" >Genre of Books issued</h4>
+                        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+                     </div>
+                     </div>
+                     <div class="forexceldownload col-sm-6">
+                      <div><img src="./icons/excelicon.png"></div>
+                      <h4>Download the Monthly Report for the<span>
+                         <label for="Year">Year</label>
+                        <select id="foryear" name="yearId" class="inputbutton" required>
+                              <option value="2022">2022</option>
+                              <option value="2023">2023</option>
+                        </select></h4>
+                        <div>
+                          <button class="btn" onclick="downloadexcel()">Download</button>
+                        </div>
+                     
+                     </div>
+                  </div>
+                  
+
+                  
+
+                  </div>
+                  
+                   
+
+                  </div>
+            </div>
+        </div>
+    </div> 
+         
+    
+
+    <script src="JS/dashboard.js"></script>
+    
+</body>
+</html>

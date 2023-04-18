@@ -1,0 +1,159 @@
+body{
+  
+    font-family: 'Open Sans', sans-serif !important;
+  
+}
+
+
+
+
+.nav {
+  /* padding-left: 433px; */
+  /* margin-bottom: 10px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style: none;
+  background-color:#c4d5e2;
+  /* color: orange; */
+  width: 28%;
+  margin: auto;
+}
+.navbar{
+  background-color:#c4d5e2;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+.container-fluid{
+  background: #c4d5e2;
+ }
+  .active2 {
+    color: #fff;
+    background-color: #189AB4;
+    font-weight: bold;
+  }
+  .nav-pills>li.active>a {
+    color: #fff;
+    background-color: orange;
+  }
+  a{
+    color: black;
+  }
+  a:active, a:hover {
+    outline: 0;
+    background-color: orange;
+}
+
+
+
+  
+.card img{
+width: 50px;
+height: 50px;
+}
+
+.back {
+    margin-top: 2%;
+    margin-left: 2%;
+    background-color: orange;
+}
+.card{
+display: flex;
+flex-direction: column;
+width: 226px;
+margin-left: 122px;
+background-color: white;
+box-shadow: 1px 1px 3px grey;
+border-radius: 8px;
+margin-bottom: 2%;
+
+
+}
+.forbg{
+    background: white;
+    margin: 0% 3% 3% 3%;
+  padding-top: 2%;
+  border-radius: 12px;
+  }
+
+
+.cardcontainer{
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 10%; */
+  height: 480px;
+  /* margin-bottom: 6%;*/
+}
+
+.card h4{
+border-bottom: #189ab4 3px solid;
+/* padding-left: 44px; */
+color: rgb(7, 7, 7);
+padding-bottom: 1%;
+text-align: center;
+}
+
+.card img{
+margin: auto !important;
+/* //background-color: orange; */
+}
+
+.cards{
+margin-top: 1%;
+}
+
+
+.card p {
+font-size: 70px;
+color:#189ab4;
+}
+#myChart{
+margin: auto;
+padding-bottom: 30px;
+}
+
+/* .booki{
+    margin-left:  74px;
+    padding-bottom: 1px;
+} */
+
+
+
+.carditems{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.forchartdiv{
+  height:228px;
+  width: 412px;
+  background-color: #fff;
+  margin-left: 21%;
+  margin-bottom: 2%;
+  padding: 8px;
+  box-shadow: aliceblue;
+  box-shadow: 1px 1px 3px grey;
+  border-radius: 8px;
+}
+
+.forexceldownload{
+  display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 44px;
+    background-color: white;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 8px;
+    padding: 37px;
+    margin-bottom: 2%;
+    margin-top: 0%;
+    align-items: center;
+
+}
+
+.forexceldownload button{
+     background-color: #189ab4;
+     color: white;
+     margin: auto;
+}

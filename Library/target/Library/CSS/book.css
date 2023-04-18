@@ -1,0 +1,589 @@
+body{
+  font-family: 'Open Sans', sans-serif !important;
+}
+ 
+  .nav {
+    /* padding-left: 433px; */
+    /* margin-bottom: 10px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style: none;
+    background-color:#c4d5e2;
+    /* color: orange; */
+    width: 28%;
+    margin: auto;
+  }
+
+  .navbar{
+    background-color:#c4d5e2;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+
+   .container-fluid{
+    background: #c4d5e2;
+   }
+  
+  .active2 {
+    color: #fff;
+    background-color: #189AB4;
+    font-weight: bold;
+  }
+  li a{
+    color: black;
+  }
+
+
+
+a:link{
+    color: white;
+}
+
+
+    .back {
+        margin: 2%;
+         background-color: orange;
+         color: white;
+    }
+   .back :hover{
+    background-color: black ;
+    border-color: orange;
+   }
+    .btn.btn-primary.active {
+      color: #fff;
+       
+  }
+
+  .btn.btn-primary::selection {
+    color: #fff;
+    /* background: orange !important; */
+}
+  
+  .btn.btn-primary {
+    color: #fff;
+    /* background-color: black !important; */
+    border-color: orange;
+}
+  .btn.btn-primary.active:hover{
+    color: rgb(255, 255, 255);
+    /* background-color: black !important; */
+    border-color: orange;
+  }
+  .btn.btn-primary:hover {
+    color: rgb(255, 255, 255);
+    /* background-color: black !important; */
+    border-color: orange;
+}
+
+ 
+
+  .issuebtn{
+     background-color: #189ab4 ; 
+    margin-left: 66%;
+    color: white;
+  }
+ 
+  .issuebook:active{
+    /* background-color: orange !important; */
+  }
+ table, td, th {  
+  border:2px solid rgb(236, 234, 231);
+  text-align: left;
+  color: white;
+     }
+
+ table {
+  border-collapse: collapse;
+    width: 100%;
+    overflow-y: scroll;
+    background-color: white;
+   }
+
+th, td {
+ padding: 4px !important;
+ color: white ;
+  }
+
+  .booktable{
+    margin: auto;
+    /* margin-top: 2%; */
+    /* height: auto; */
+   
+  }
+  .fortable{
+    margin-top: 2%;
+    max-height: 280px;
+    overflow-y: scroll;
+    width: 60%;
+    margin-left: 15%;
+  }
+
+td {
+    text-align:center;
+    color: #0f1010 !important;
+}
+  
+  h1{
+    text-align: center;
+  }
+
+  th{
+    border: 3px solid rgb(236, 234, 231);
+    background-color: #189ab4;
+    position: sticky;
+    top: -2px;
+    text-align: center;
+  }
+
+  tr td{
+    border: 2px solid rgb(236, 234, 231);
+    padding: 6px;
+  }
+
+  .search-addbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-right: 20%;
+  }
+  #issuedbooks{
+    display: none;
+  }
+
+  #allbooks{
+    display: block;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  /* #addBook{
+    display: none;
+  } */
+
+  .returnbtn{
+    background-color: #189ab4;
+    color: white;
+  }
+
+  .rightvector{
+    position: absolute;
+    right: 8%;
+     bottom: 26% ;
+
+  }
+
+  .rightvector img{
+    height: 240px;
+  }
+
+  .leftvector{
+    position: absolute;
+    left: 4%;
+    bottom: 4%;
+  }
+
+  .leftvector img{
+    height: 200px;
+  }
+  .addbook{
+    background-color: #189ab4;
+     margin-left: 20%; 
+    margin-top: 1%;
+    color: white;
+  }
+
+  .forinput{
+    margin-left: 2%;
+  }
+
+  .addbookform{
+    border: 1px solid rgb(122, 122, 122);
+    position: absolute;
+    /* display: none; */
+    left: 14%;
+    top: 10%;
+    background-color: white;
+    border-radius: 29px;
+    padding: 12px;
+  }
+
+  .forinputfield{
+    margin: 2px;
+  }
+
+  /* .addbookopen{
+    display: block;
+  } */
+
+  .inputbutton{
+    margin: auto;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    width: 180px;
+    border-radius: 8px;
+    padding: 5px;
+  }
+   .modal{
+      z-index: 3;
+      display: none; 
+      padding-top: 100px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+   }
+  .pattern{
+    margin: 2% 2% 2% 6%;
+  }
+
+  .alignadd{
+    align-content: center;
+  }
+
+  .addbtn{
+    margin-left: 48%;
+background-color: #0e5c6c;
+margin-top: 2%;
+color: white;
+  }
+
+  .foricon{
+    height: 48px;
+margin-left: 40%;
+ }
+
+
+ /* //bookissuecss */
+
+ h2{
+    color: #efefef;
+   text-align: center;
+   margin-top:0;
+  }
+  
+  .issuebutton{
+    background-color: #efefef;
+    padding: 8px 16px;
+    color: black;
+    margin-left: 40%;
+    margin-top: 3%;
+    border: #efefef;
+    background-color: darkseagreen;
+  
+  }
+  .issuebutton:hover{
+    background-color: darkolivegreen;
+  }
+
+  .foricon2 {
+    height: 48px;
+    margin-left: 97%;
+    text-decoration: none;
+    color: black;
+}
+.foricon3 {
+  height: 48px;
+  margin-left: 98%;
+  text-decoration: none;
+    color: black;
+}
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+
+  
+  /* //bookissuecss */
+  /* .inputbutton{   
+      border-radius: 10px;
+      outline: 1px solid #FEBF00;
+     border: 0;
+     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+     background-color: #e2e2e2;
+     outline-offset: 3px;
+     padding: 10px 1rem;
+     transition: 0.25s;
+     width: 50%;
+     margin-top: 2%;
+      }
+  
+        .inputbutton:focus {
+        outline-offset: 5px;
+        background-color: #fff
+           } */
+       /* label{
+         color: #100f0f;
+         margin-left: 9rem;
+         font-size: 15px;
+          } */
+     .inputlabel{
+         margin-top: 2%;
+     }
+  
+  
+  
+  ::selection{
+  color: #fff;
+  background: #664AFF;
+  }
+  
+  .wrapper{
+  max-width: 315px;
+  margin: 2% auto;
+  }
+  
+  .wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  /* border-radius: 5px; */
+  position: relative;
+  /* box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); */
+  }
+  
+  .search-input input{
+  height: 44px;
+  width: 100%;
+  outline: none;
+  /* border: none; */
+  /* border-radius: 5px; */
+  padding: 0 60px 0 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1); 
+}
+  /**/
+  
+  
+  .search-input.active input{
+  border-radius: 5px 5px 0 0;
+  }
+  
+  .search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+  
+  }
+  
+  .search-input.active .autocom-box{
+    padding: 10px 5px;
+    opacity: 1;
+    z-index: 100;
+    background: white;
+    pointer-events: auto;
+    /* border: 0.5px solid black; */
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+  }
+  
+  .autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+  background-color:white;
+  color: black;
+  }
+  
+  .search-input.active .autocom-box li{
+    display: block;
+    position: absolute;
+    width: 295px;
+    z-index: 10;
+    color: black;
+    /* border: 0.5px solid black; */
+    margin: 5px;
+  }
+  .autocom-box li:hover{
+  background: white;
+  color: black;
+  }
+  
+  
+  
+  .inputbox{
+  margin-top: 2%;
+ 
+    /* margin-bottom: 6%; */
+  }
+  .autocom-box{
+  position: absolute !important;
+  }
+  .autocom-box li{
+  position: relative !important;
+  }
+  .wrappers{
+    max-width: 315px;
+    margin: 2% auto;
+    }
+    
+    .wrappers .search-inputs{
+    background: #fff;
+    width: 100%;
+    /* border-radius: 5px; */
+    position: relative;
+    /* box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12); */
+    }
+    
+    .search-inputs input{
+    height: 44px;
+    width: 100%;
+    outline: none;
+    /* border: none; */
+    /* border-radius: 5px; */
+    padding: 0 60px 0 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1); 
+    /* box-shadow: 0px 1px 5px rgba(0,0,0,0.1); */
+    }
+    
+    .search-inputs.active input{
+    border-radius: 5px 5px 0 0;
+    }
+    
+    .search-inputs .autocom-boxs{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    
+    
+    }
+    
+    .search-inputs.active .autocom-boxs{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    }
+    
+    .autocom-boxs li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+    background-color:white;
+    color: black;
+    }
+    
+    .search-inputs.active .autocom-boxs li{
+      display: block;
+    position: absolute;
+    width: 295px;
+    z-index: 10;
+    color: black;
+    /* border: 0.5px solid black; */
+    
+    }
+    .autocom-boxs li:hover{
+    background: white;
+    color: black;
+    }
+    
+    
+    
+    .inputboxs{
+    margin-top: 2%;
+    }
+    .autocom-boxs{
+    position: absolute !important;
+    }
+    .autocom-boxs li{
+    position: relative !important;
+    }
+    .forbg{
+      background: white;
+      margin: 1% 3% 3% 3%;
+    padding: 3%;
+    border-radius: 12px;
+    height: 490px;
+    }
+
+  .issueform{
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top:20%;
+    border: white;
+    padding: 25px;
+    border-radius: 6px;
+    background-color: white;
+  } 
+ 
+  #issueformhide{
+    display: none;
+  }
+  
+  .forbutton{
+    margin-left: 1%;
+    width: 309px;
+    height: 38px;
+  }
+  
+  .buttonissue{
+         margin-top: 1%;
+        background-color: black;
+        color: white;
+            margin-top: 5%;
+            margin-left: 40%;
+        
+  }
+  .buttonissue :hover{
+    color: white !important;
+  }
+ .issueinput{
+    padding-left:5%;
+    border-radius: 8px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1); 
+    
+  } 
+  /* .inputbutton{
+    border-radius: 8px;
+  } */
+
+  .addbookform h2{
+    color: black;
+  }
+  
+
+  #controladdbook{
+    display: none;
+  }
+
+  #search {
+    margin-left: 15%; 
+    padding-left: 16px;
+    padding-right: 90px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 1%;
+    border: 1px orange; 
+     margin-left: 87px!important; 
+    /* margin-right: 19%;*/
+    border-radius: 5px;
+    background-color: #f7f5f5;
+    color: black;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    
+}
