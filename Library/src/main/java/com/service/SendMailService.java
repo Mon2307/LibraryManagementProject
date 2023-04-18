@@ -33,7 +33,7 @@ public class SendMailService {
         Session session=Session.getInstance(properties, new Authenticator() {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("monika.hamand@wavemaker.com", "Forpramati@23");
+                return new PasswordAuthentication("somegmail", "****");
             }
 
 
